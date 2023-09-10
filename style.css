@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+display: flex; 
+flex-wrap: wrap;
+justify-content: center;
+
+height: 100vh;
+    gap: 10px;
+    background-color: black;
+
+}
+.container{
+    height: 47vh;
+    width: 20%;
+    border: 2px solid red;
+    border-radius: 10px;
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+
+}
+.container img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.container i{
+transform: scale(0);
+    position: absolute;
+    font-size: 50px;
+    color: red;
+    opacity: 1;
+    transition: transform .3s ease ;
+}
